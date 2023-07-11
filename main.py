@@ -2,7 +2,7 @@
 import streamlit as st
 import time
 
-seconds = 10
+seconds = 25
 
 #MARKDOWN
 #Displaying Markdown
@@ -35,24 +35,20 @@ st.markdown('###  Putri 30M')
 data1 = get_data(url1)
 placeholder1 = st.empty()
 placeholder1.dataframe(data1)
-time.sleep(seconds)
-placeholder1.empty()
-
 st.markdown('###  Putra 30M')
 data2 = get_data(url2)
 placeholder2 = st.empty()
 placeholder2.dataframe(data2)
+
 time.sleep(seconds)
+placeholder1.empty()
 placeholder2.empty()
 
 while True:
     data1 = get_data(url1)
     placeholder1.dataframe(data1)
-    time.sleep(seconds)
-    placeholder1.empty()
-
-    st.markdown('###  Putri 30M')
     data1 = get_data(url1)
     placeholder2.dataframe(data2)
     time.sleep(seconds)
+    placeholder1.empty()
     placeholder2.empty()
