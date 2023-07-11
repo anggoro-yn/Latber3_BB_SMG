@@ -1,4 +1,4 @@
-#Import Streamlit library
+##Import Streamlit library
 import streamlit as st
 
 #MARKDOWN
@@ -17,5 +17,5 @@ SHEET_NAME = 'PeringkatPI'
 url = f'https://docs.google.com/spreadsheets/d/{SHEET_ID}/gviz/tq?tqx=out:csv&sheet={SHEET_NAME}'
 df = pd.read_csv(url)
 print(df.head())
-st.dataframe(df)
+#st.dataframe(df)
 st.table(df)
