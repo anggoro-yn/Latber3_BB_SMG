@@ -9,9 +9,7 @@ seconds = 25
 st.markdown("# Latber 3 Barebow Semarang")
 st.markdown('## Skor Perlombaan')
 
-string1 = '''
-App ini akan update data secara otomatis setiap {seconds} detik. Jika anda ingin menstop fitur autoupdate, silakan klik "Stop" pada kanan atas. Jika anda ingin kembali mengaktifkan autoupdate, silakan klik tiga garis datar pada kanan atas, dan kemudian klik "Rerun"
-'''
+string1 = f'App ini akan update data secara otomatis setiap {seconds} detik. Jika anda ingin menstop fitur autoupdate, silakan klik "Stop" pada kanan atas. Jika anda ingin kembali mengaktifkan autoupdate, silakan klik tiga garis datar pada kanan atas, dan kemudian klik "Rerun"'
 st.write(string1)
 
 
