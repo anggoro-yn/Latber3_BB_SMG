@@ -1,6 +1,16 @@
 #Import Streamlit library
 import streamlit as st
 
+import pandas as pd
+
+
+# https://docs.google.com/spreadsheets/d/1W2smfo-KRBcU2DMM7tjwaW8BU5Ls2P7QvTmqoj_3slE/edit?usp=sharing
+SHEET_ID = '1W2smfo-KRBcU2DMM7tjwaW8BU5Ls2P7QvTmqoj_3slE'
+SHEET_NAME = 'Peringkat'
+url = f'https://docs.google.com/spreadsheets/d/{SHEET_ID}/gviz/tq?tqx=out:csv&sheet={SHEET_NAME}'
+df = pd.read_csv(url)
+print(df.head())
+
 #MARKDOWN
 #Displaying Markdown
 st.markdown("# Beginner's Guide to Streamlit\n# with Python")
