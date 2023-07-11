@@ -35,6 +35,7 @@ st.markdown('###  Putri 30M')
 data1 = get_data(url1)
 placeholder1 = st.empty()
 placeholder1.dataframe(data1)
+
 st.markdown('###  Putra 30M')
 data2 = get_data(url2)
 placeholder2 = st.empty()
