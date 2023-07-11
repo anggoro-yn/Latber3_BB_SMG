@@ -5,6 +5,8 @@ import streamlit as st
 #Displaying Markdown
 st.markdown("# Latber 3 Barebow Semarang")
 st.markdown('## Skor Perlombaan')
+st.markdown('###  Putra 30M')
+
 
 # DATAFRAME
 # Import Necessary libraries
