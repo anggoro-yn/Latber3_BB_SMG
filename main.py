@@ -31,5 +31,7 @@ def get_data():
 
 while True:
     data = get_data()
-    st.write(data)
+    placeholder = st.empty()
+    placeholder.dataframe(data)
     time.sleep(5)
+    placeholder.empty()
