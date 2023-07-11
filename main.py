@@ -2,7 +2,7 @@
 import streamlit as st
 import time
 
-seconds = 5
+seconds = 10
 
 #MARKDOWN
 #Displaying Markdown
@@ -24,7 +24,7 @@ colnames = ['Peringkat', 'Target', 'Nama', 'Klub','Total','S1-1','S1-2','S1-3','
 #print(df.head())
 #st.dataframe(df)
 
-@st.cache(ttl=5)
+@st.cache(ttl=seconds)
 def get_data():
     data = pd.read_csv(url, names = colnames)
     return data
@@ -33,5 +33,5 @@ while True:
     data = get_data()
     placeholder = st.empty()
     placeholder.dataframe(data)
-    time.sleep(5)
+    time.sleep(seconds)
     placeholder.empty()
