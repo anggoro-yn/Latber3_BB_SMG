@@ -23,11 +23,11 @@ url1 = f'https://docs.google.com/spreadsheets/d/{SHEET_ID}/gviz/tq?tqx=out:csv&s
 url2 = f'https://docs.google.com/spreadsheets/d/{SHEET_ID}/gviz/tq?tqx=out:csv&sheet={SHEET_NAME2}'
 colnames = ['Peringkat', 'Target', 'Nama', 'Klub','Total','S1-1','S1-2','S1-3','S1-4','S1-5','S1-6','Tot S1','S2-1','S2-2','S2-3','S2-4','S2-5','S2-6','Tot S2']
 df1 = pd.read_csv(url1, names = colnames)
-st.write(df.head())
+st.write(df1.head())
 st.dataframe(df1)
 
 df2 = pd.read_csv(url2, names = colnames)
-st.write(df.head())
+st.write(df2.head())
 st.dataframe(df2)
 
 
