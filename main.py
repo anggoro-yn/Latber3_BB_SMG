@@ -2,7 +2,7 @@
 import streamlit as st
 import time
 
-seconds = 25
+seconds = 10
 
 #MARKDOWN
 #Displaying Markdown
