@@ -48,7 +48,7 @@ placeholder2.empty()
 while True:
     data1 = get_data(url1)
     placeholder1.dataframe(data1)
-    data1 = get_data(url1)
+    data2 = get_data(url2)
     placeholder2.dataframe(data2)
     time.sleep(seconds)
     placeholder1.empty()
