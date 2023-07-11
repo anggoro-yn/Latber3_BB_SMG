@@ -23,5 +23,13 @@ colnames = ['Peringkat', 'Target', 'Nama', 'Klub','Total','S1-1','S1-2','S1-3','
 df = pd.read_csv(url, names = colnames)
 #print(df.head())
 st.dataframe(df)
-st.write(df)
-time.sleep(seconds)
+
+@st.cache(ttl=5)
+def get_data():
+    data = pd.read_csv(url, names = colnames)
+    return data
+
+while True:
+    data = get_data()
+    st.write(data)
+    time.sleep(5)
