@@ -18,12 +18,4 @@ url = f'https://docs.google.com/spreadsheets/d/{SHEET_ID}/gviz/tq?tqx=out:csv&sh
 df = pd.read_csv(url)
 print(df.head())
 st.dataframe(df)
-
-
-# TABLE
-# defining random values in a dataframe using pandas and numpy
-df = pd.DataFrame(
-np.random.randn(20, 5),
-columns=('col_no %d' % i for i in range(5)))
-# defining data in table
 st.table(df)
